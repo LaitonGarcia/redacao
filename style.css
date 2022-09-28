@@ -1,0 +1,88 @@
+﻿/* =define margin superior da página como 0 */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* #tudo contem todo conteúdo da página */
+#tudo {
+	width: 100%;
+    height: 100vh;
+	background-image: url('photos_2018_3_6_fst_wall-white-plaster-rough.jpg');
+	background-position: center top;
+	background-size: cover;
+	font-family: Acme, roboto, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgba(0,0,0,.1);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.45);
+    margin-bottom: 2%;
+}
+header img{
+    width: 200px;
+}
+header h1{
+	text-align:center;
+    color: #26502c;
+    font-size: 2em;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.23);
+}	
+nav{
+    display: flex;
+    flex-direction: column;
+    margin:0px auto;
+    width:90%;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	list-style:none;
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
+   
+}
+nav ul li{
+    background-color: cadetblue;
+    width: 200px;
+    height: 70px;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.66);
+}
+nav ul li a{
+    width: 100%;
+    height: 100%;
+	text-decoration:none;
+	display: inline-block;
+	color: #26502c;
+    border-radius: 10px;
+	font-size:1.2em;
+    transition: .5s; 
+    line-height: 70px;
+}
+nav ul li a:hover{   /* aponta o cursor do mouse, ele muda a cor do fundo */ 
+    background-color: #2f5f35;
+	color: white;
+    border-radius: 10px;	
+}
+nav ul li:hover{   /* aponta o cursor do mouse, ele muda a cor do fundo */ 
+    background-color: #26502c;
+	color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(5, 5, 5, 0.79);
+    transition: .5s;
+}
+.conteudo{   
+    width:95%;
+    margin: 2px auto;
+	background-color:rgb(0,0,0,0); 
+}
+@media (max-width:1300px){
+    #tudo{height:200vh;}
+}

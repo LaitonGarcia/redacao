@@ -1,0 +1,68 @@
+﻿/* =define margin superior da página como 0 */
+*{margin: 0;
+padding:0;
+}
+*{box-sizing: border-box;}
+
+/* #tudo contem todo conteúdo da página */
+#tudo {
+
+	width: 100%;
+	background-image: url('photos_2018_3_6_fst_wall-white-plaster-rough.jpg');
+	background-position: center top;
+	background-size: cover;
+	font-family: Acme, roboto, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+hr{
+	height: 3px;
+	width:50%;
+	margin: auto;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    margin:0px auto;
+    width:90%;
+}
+h1,h3{
+	text-align:center;
+    color: #26502c;
+}	
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+	list-style:none;
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
+}
+nav ul li a{
+	text-decoration:none;
+	display: block;
+	padding: 5px 10px; /* margem interna*/
+	color: #2f5f35;
+    border-radius: 10px;
+	font-size:1.2em;
+    transition: .5s; /* aqui este comando temporiza a transição, as mudanças, pode ser usado de varios modos */
+}
+nav ul li a:hover{   /* aponta o cursor do mouse, ele muda a cor do fundo */ 
+    background-color: rgb(56,182,144)/*#2f5f35*/;
+	color: white;
+    border-radius: 10px;	
+}
+nav ul li:hover{   /* aponta o cursor do mouse, ele muda a cor do fundo */ 
+    background-color: #26502c;
+	color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(5, 5, 5, 0.79);
+    transition: .5s;
+}
+.conteudo{   
+    width:95%;
+    margin: 2px auto;
+	background-color:rgb(0,0,0,0); 
+}
